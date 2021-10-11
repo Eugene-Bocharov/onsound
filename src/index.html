@@ -3,19 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Заголовок страницы</title>
+    <title>Onsound</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/home.css">
   </head>
   <body>
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-    <include src="./partials/example.html"></include>
+   <include src="./partials/example.html"></include>
 
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+   <header class="header">
+   <div class="container">
+     <nav class="navigation">
+       <h1 class="logo">OnSound</h1>
+       <ul class="menu">
+         <li class="menu_item selected">home</li>
+         <li class="menu_item">browse</li>
+         <li class="menu_item">plylists</li>
+         <li class="menu_item">profile</li>
+       </ul>
+       <div class="user_menu">
+         <img  class="user_image" src="./images/demo.jpg" alt="">
+         <button class="user_menu_arrow_down"> <img src="./icons/arrow_left_disabled.svg" class="user_menu_arrow_down_img"  alt=""></button>       
+        </div>
+     </nav>
+   </div>
+
+   </header>
+
+
     <script src="./index.js"></script>
   </body>
 </html>
