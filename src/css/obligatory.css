@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Engagement&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@500&display=swap");
+
+/* ----------------------------------------------------------------  header ----------------------------------------------------------------  */
+
+.header {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+  position: fixed;
+  vertical-align: middle;
+  padding-left: 20%;
+  background-color: #121212;
+}
+
+.navigation {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #fff;
+  font-family: Engagement;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  margin: 0;
+}
+
+.menu {
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu_item {
+  font-family: "Exo", sans-serif;
+  color: #fff;
+  list-style: none;
+  text-transform: uppercase;
+  transition: all 0.2s linear;
+}
+
+.menu_item_link {
+  text-decoration: none;
+  color: #fff;
+  list-style: none;
+  text-transform: uppercase;
+  transition: all 0.2s linear;
+}
+
+.selected {
+  font-weight: bolder;
+  text-shadow: 1px 1px 1px rgba(60, 141, 173, 0);
+}
+
+/* ----------------------------------------------------------------  footer ----------------------------------------------------------------  */
+
+.footer {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 100%;
+  position: fixed;
+  vertical-align: middle;
+  /* padding-left: 20%; */
+  top: 85.7%;
+  min-height: 135px;
+  height: 135px;
+  background-color: #121212;
+}
+
+.footer_container {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* -----------------------------------------------------------  image -----------------------------------------------------------  */
+
+.footer_image_box {
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+}
+
+.footer_image {
+  max-width: 110px;
+  height: 100%;
+  border-radius: 15px;
+}
+
+/* -----------------------------------------------------  control panel -----------------------------------------------------  */
+
+.control_panel {
+  margin-top: 25px;
+}
+
+.control_panel_top {
+margin-left: 250px;
+}
+
+.control_panel_bottom {
+  display: flex;
+  margin-top: 10px;
+}
+
+.like_button {
+  background-color: #121212;
+  height: 48px;
+  width: 48px;
+  border: 0;
+}
+
+.like_button_image {
+  height: 28px;
+  width: 28px;
+}
+
+.back_button {
+  background-color: #121212;
+  height: 48px;
+  width: 48px;
+  border: 0;
+}
+
+.back_button_image {
+  height: 28px;
+  width: 28px;
+}
+
+.play_button {
+  height: 48px;
+  width: 48px;
+  border: 0;
+  border-radius: 50%;
+  padding-top: 5px;
+  padding-left: 5px;
+  background-color: #3c3c3c;
+}
+
+.play_button_image {
+  height: 28px;
+  width: 28px;
+}
+
+.next_button {
+  background-color: #121212;
+  height: 48px;
+  width: 48px;
+  border: 0;
+}
+
+.next_button_image {
+  height: 28px;
+  width: 28px;
+}
+
+.repeat_button {
+  background-color: #121212;
+  height: 48px;
+  width: 48px;
+  border: 0;
+}
+
+.repeat_button_image {
+  height: 28px;
+  width: 28px;
+}
+
+
+.current_track_time{
+  margin-right: 10px;
+  color: #fff;
+  font-family: "Exo", sans-serif;
+}
+
+.track_range_input{
+  /* width: 100%; */
+  width: 600px;
+}
+  
+
+.final_track_time{
+  margin-left: 10px;
+  color: #fff;
+  font-family: "Exo", sans-serif;
+}
+
+/* -----------------------------------------------------  sound control -----------------------------------------------------  */
+
+.sound_range_input{
+  margin-top: 55px;
+}
