@@ -24,5 +24,10 @@
     "parcel-plugin-nuke-dist": "^1.0.1",
     "posthtml-include": "^1.6.2",
     "sass": "^1.43.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "regenerator-runtime": "^0.13.9",
+    "spotify-web-api-node": "^5.0.2"
   }
 }

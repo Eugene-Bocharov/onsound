@@ -1,28 +1,45 @@
 const SpotifyWebApi = require('spotify-web-api-node');
 const spotifyApi = new SpotifyWebApi();
 import token from "./acces_token";
+import musicCards from "../templates/musicCards.hbs"
+
 spotifyApi.setAccessToken(token);
+
+const topTracksList = document.querySelector(".main_top_container");
+const bottomTracksList = document.querySelector(".main_bottom_container");
+
 
 export async function getPlaylistTracks(playlistId, playlistName) {
 
-    const data = await spotifyApi.getPlaylistTracks(playlistId, {
-      offset: 1,
-      limit: 100,
+    const topData = await spotifyApi.getPlaylistTracks(playlistId, {
+      offset: 199,
+      limit: 7,
       fields: 'items'
     })
-    
-  
-   
-    console.log("'" + playlistName + "'" + ' contains these tracks:');
-  //   let tracks = [];
-  
-    for (let track_obj of data.body.items) {
+    let topTracksMarkup = ``;
+    for (let track_obj of topData.body.items) {
       const track = track_obj.track;
-      // console.log(track);
       
-      // tracks.push(track);
-      console.log(track.name + " : " + track.artists[0].name)
+      topTracksMarkup += musicCards(track);
     }
-  //   console.log("---------------+++++++++++++++++++++++++")
-  //   return tracks;
-  }
+    topTracksList.insertAdjacentHTML("beforeend", topTracksMarkup);
+
+    
+    const bottomData = await spotifyApi.getPlaylistTracks(playlistId, {
+      offset: 249,
+      limit: 7,
+      fields: 'items'
+    })
+    let bottomTracksMarkup = ``;
+    for (let track_obj of bottomData.body.items) {
+      const track = track_obj.track;
+      
+      bottomTracksMarkup += musicCards(track);
+    }
+    bottomTracksList.insertAdjacentHTML("beforeend", bottomTracksMarkup);
+    
+  };
+
+  
+
+  

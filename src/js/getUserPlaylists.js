@@ -6,16 +6,10 @@ import { getPlaylistTracks } from "./getPlaylistTracks";
 export async function getUserPlaylists(userName) {
     
     const data = await spotifyApi.getUserPlaylists(userName)
-  
-    console.log("---------------+++++++++++++++++++++++++")
-    let playlists = []
-  
+    let playlists = [];
+    
     for (let playlist of data.body.items) {
-      console.log(playlist.name + " " + playlist.id)
-      
       let tracks = await getPlaylistTracks(playlist.id, playlist.name);
-      
-  
-      
+    
     }
   }
