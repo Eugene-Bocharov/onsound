@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Engagement&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@500&display=swap");
+
+.user_container{
+    display: flex;
+    justify-content: center;
+}
+
+.positioning_container{
+    margin-top: 100px;
+width: 80%;
+display: flex;
+justify-content: space-between;
+}
+
+.user_image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+.username{
+
+    font-family: "Exo", sans-serif;
+    font-style: normal;
+font-weight: normal;
+font-size: 48px;
+line-height: 64px;
+margin-top: 50px;
+
+color: #FFFFFF;
+
+
+}
+
+.email{
+
+
+    font-family: "Exo", sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 32px;
+
+color: #FFFFFF;
+
+
+}
+
+.settings{
+width: 317px;
+height: 128px;
+background: #252525;
+border: 3px solid #FFFFFF;
+border-radius: 6px;
+
+
+font-family: "Exo", sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 64px;
+color: #FFFFFF;
+margin-top: 50px;
+
+
+}
+
+.user{
+display: flex;
+justify-content: space-between;
+}
+
+.top_artists{
+    margin-top: 110px;
+}
+
+.top_artists_heading{
+
+    font-family: "Exo", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 64px;
+    
+    color: #FFFFFF;
+    margin-bottom: 70px;
+}
+
+.center_container{
+display: flex;
+justify-content: center;
+}
+
+.top_artists_ul{
+list-style: none;
+display: grid;
+grid-template-columns: repeat(7, 3fr) ;
+}
+
+.artist{
+width: 150px;
+height: 204px;
+
+background: #5F5F5F;
+border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-right: 50px;
+}
+
+.artist_image{
+    position: absolute;
+    top:10px;
+width: 132px;
+height: 127px;
+border-radius: 10px;
+}

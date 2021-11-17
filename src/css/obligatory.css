@@ -11,6 +11,7 @@
   vertical-align: middle;
   padding-left: 20%;
   background-color: #121212;
+  z-index: 10;
 }
 
 .navigation {

@@ -401,3 +401,9 @@ template {
 [hidden] {
   display: none;
 }
+
+
+.main_container{
+display: flex;
+justify-content: center;
+}

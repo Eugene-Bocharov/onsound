@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/obligatory.css" />
+    <link rel="stylesheet" href="../css/groupprofile.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navigation">
+          <h1 class="logo">OnSound</h1>
+          <ul class="menu">
+            <li class="menu_item">
+              <a class="menu_item_link" href="../index.html">home</a>
+            </li>
+            <li class="menu_item">
+              <a class="menu_item_link" href="./browse.html">browse</a>
+            </li>
+            <li class="menu_item">
+              <a class="menu_item_link" href="./playlists.html">playlists</a>
+            </li>
+            <li class="menu_item selected">
+              <a class="menu_item_link" href="#">profile</a>
+            </li>
+          </ul>
+          <div class="user_menu">
+            <!-- <img  class="user_image" src="./images/dark.jpg" alt=""> -->
+            <!-- <button class="user_menu_arrow_down"> <img src="./icons/arrow_left_disabled.svg" class="user_menu_arrow_down_img"  alt=""></button>        -->
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+
+      <div class="background">
+        <div class="button"><div class="button_arrow"></div></div>
+        <h2 class="background_heading">(hed) P.E.</h2>
+      </div>
+      <h3 class="categories_heading"></h3>
+      <div class="track_categories">
+        <div class="track_category rock"></div>
+        <div class="track_category metal"></div>
+        <div class="track_category rock"></div>
+      </div>
+
+      <div class="album_tracks">
+        <h3 class="album_tracks_heading"></h3>
+        <div class="parameters">
+          <div class="id_and_name">
+            <h4 class="parameter_name"></h4>
+            <h4 class="parameter_name"></h4>
+          </div>
+          <div class="text_listeners_time">
+            <h4 class="parameter_name"></h4>
+            <h4 class="parameter_name"></h4>
+            <h4 class="parameter_name"></h4>
+          </div>
+        </div>
+
+        <div class="hr_line"></div>
+
+        <div class="album_tracks_parameter">
+          <div class="id_and_name">
+            <h4 class="album_track_parameter"></h4>
+            <img src="" alt="album track image" class="album_track_parameter" />
+            <h4 class="album_track_parameter"></h4>
+          </div>
+          <div class="text_listeners_time">
+            <button class="album_track_parameter"></button>
+            <h4 class="album_track_parameter"></h4>
+            <h4 class="album_track_parameter"></h4>
+          </div>
+        </div>
+
+        <div class="album_tracks_parameter">
+          <div class="id_and_name">
+            <h4 class="album_track_parameter"></h4>
+            <img src="" alt="album track image" class="album_track_parameter" />
+            <h4 class="album_track_parameter"></h4>
+          </div>
+          <div class="text_listeners_time">
+            <button class="album_track_parameter"></button>
+            <h4 class="album_track_parameter"></h4>
+            <h4 class="album_track_parameter"></h4>
+          </div>
+        </div>
+      </div>
+      
+    </main>
+
+    <footer class="footer">
+      <div class="footer_container">
+        <div class="footer_image_box">
+          <img
+            src="https://s.mxmcdn.net/images-storage/albums2/4/2/0/3/7/5/52573024_800_800.jpg"
+            class="footer_image"
+            alt="sound image"
+          />
+        </div>
+
+        <div class="control_panel">
+          <div class="control_panel_top">
+            <button class="like_button">
+              <img src="../icons/heart.png" class="like_button_image" alt="" />
+            </button>
+            <button class="back_button">
+              <img
+                src="../icons/previos_track.png"
+                class="back_button_image"
+                alt="previos track"
+              />
+            </button>
+            <button class="play_button">
+              <img src="../icons/play_button.png" class="play_button_image" />
+            </button>
+            <button class="next_button">
+              <img
+                src="../icons/next_track.png"
+                class="next_button_image"
+                alt="next track"
+              />
+            </button>
+            <button class="repeat_button">
+              <img
+                src="../icons/repeat.png"
+                class="repeat_button_image"
+                alt=""
+              />
+            </button>
+          </div>
+          <div class="control_panel_bottom">
+            <p class="current_track_time">0:00</p>
+            <input type="range" class="track_range_input" value="0" />
+            <p class="final_track_time">3:00</p>
+          </div>
+        </div>
+        <div class="sound_panel">
+          <input type="range" class="sound_range_input" value="0" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

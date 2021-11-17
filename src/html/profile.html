@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/obligatory.css">
+    <link rel="stylesheet" href="../css/profile.css">
 </head>
 <body>
 
@@ -28,6 +29,82 @@
         </div>
      
         </header>
-    
+
+    <main>
+      <div class="user_container">
+        <div class="positioning_container">
+          <div class="user"><img src="../images/just_a_icon.jpg"  alt="userimg" class="user_image" vspace="5" hspace="5">
+            <div class="text">
+            <h2 class="username">Name</h2>
+            <p class="email">email@gmail.com</p></div>
+          </div>
+          <button class="settings">settings</button>
+        </div>
+      </div>
+
+      <div class="center_container">
+    <div class="top_artists">
+      <h2 class="top_artists_heading">top artists</h2>
+        <ul class="top_artists_ul">
+          <li class="artist"><img src="../images/artist.jpg" alt="" class="artist_image"></li>
+          <li class="artist"><img src="../images/artist.jpg" alt="" class="artist_image"></li>
+          <li class="artist"><img src="../images/artist.jpg" alt="" class="artist_image"></li>
+          <li class="artist"><img src="../images/artist.jpg" alt="" class="artist_image"></li>
+          <li class="artist"><img src="../images/artist.jpg" alt="" class="artist_image"></li>
+        </ul>
+    </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer_container">
+        <div class="footer_image_box">
+          <img
+            src="https://s.mxmcdn.net/images-storage/albums2/4/2/0/3/7/5/52573024_800_800.jpg"
+            class="footer_image"
+            alt="sound image"
+          />
+        </div>
+
+        <div class="control_panel">
+          <div class="control_panel_top">
+            <button class="like_button">
+              <img src="../icons/heart.png" class="like_button_image" alt="" />
+            </button>
+            <button class="back_button">
+              <img
+                src="../icons/previos_track.png"
+                class="back_button_image"
+                alt="previos track"
+              />
+            </button>
+            <button class="play_button">
+              <img src="../icons/play_button.png" class="play_button_image" />
+            </button>
+            <button class="next_button">
+              <img
+                src="../icons/next_track.png"
+                class="next_button_image"
+                alt="next track"
+              />
+            </button>
+            <button class="repeat_button">
+              <img
+                src="../icons/repeat.png"
+                class="repeat_button_image"
+                alt=""
+              />
+            </button>
+          </div>
+          <div class="control_panel_bottom">
+            <p class="current_track_time">0:00</p>
+            <input type="range" class="track_range_input" value="0" />
+            <p class="final_track_time">3:00</p>
+          </div>
+        </div>
+        <div class="sound_panel">
+          <input type="range" class="sound_range_input" value="0" />
+        </div>
+      </div>
+    </footer>
 </body>
 </html>
